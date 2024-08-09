@@ -21,7 +21,7 @@ data class Artist(
     val artistId: Int,
     val artistType: Int,
     val artistName: String,
-    var member: String,
+    var member: List<String>,
     val debutDate: String,
     var artistPhoto: String,
     var artistInfo: String,
