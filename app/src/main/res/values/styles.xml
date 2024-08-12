@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <style name="customBottomNavigation" parent="Widget.Design.BottomNavigationView">
         <item name="itemIconSize">24dp</item>
         <item name="itemIconTint">@color/bottom_nav_selector</item>
         <item name="itemTextColor">@color/bottom_nav_selector</item>
         <item name="itemBackground">@android:color/transparent</item>
         <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <style name="music_ctrl_text" parent="Theme.MaterialComponents.Light">
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">22dp</item>
+        <item name="android:textColor">@color/basic_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="music_ctrl_button" parent="Theme.MaterialComponents.Light">
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">12dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
     </style>
 </resources>

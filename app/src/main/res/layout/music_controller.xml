@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp">
+
+    <TextView
+        android:id="@+id/music_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        style="@style/music_ctrl_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/barrier"
+        tools:text="SNAP"/>
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        style="@style/music_ctrl_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/music_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/barrier"
+        tools:text="Rosa Linn"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="190dp" />
+
+    <ImageButton
+        android:id="@+id/previous_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_ctrl_prev_track"
+        android:contentDescription="@string/ctrl_previous_music"
+        style="@style/music_ctrl_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/barrier" />
+
+    <ImageButton
+        android:id="@+id/music_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_ctrl_play"
+        android:contentDescription="@string/ctrl_music_play"
+        android:visibility="visible"
+        style="@style/music_ctrl_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/next_music"
+        app:layout_constraintStart_toEndOf="@+id/previous_music"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/music_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:src="@drawable/icon_ctrl_pause"
+        android:contentDescription="@string/ctrl_music_pause"
+        style="@style/music_ctrl_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/next_music"
+        app:layout_constraintStart_toEndOf="@+id/previous_music" />
+
+    <ImageButton
+        android:id="@+id/next_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_ctrl_next_track"
+        android:contentDescription="@string/ctrl_next_music"
+        style="@style/music_ctrl_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/music_playlist" />
+
+    <ImageButton
+        android:id="@+id/music_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_ctrl_playlist"
+        android:contentDescription="@string/ctrl_music_playlist"
+        style="@style/music_ctrl_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

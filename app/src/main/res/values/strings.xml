@@ -7,4 +7,12 @@
     <string name="bottom_nav_playlist">Playlist</string>
     <string name="bottom_nav_search">Search</string>
     <string name="bottom_nav_profile">Profile</string>
+
+    <!-- Music Controller -->
+    <string name="ctrl_previous_music">Previous Music</string>
+    <string name="ctrl_music_play">Music Play</string>
+    <string name="ctrl_music_pause">Music Pause</string>
+    <string name="ctrl_next_music">Next Music</string>
+    <string name="ctrl_music_playlist">Playlist</string>
+
 </resources>

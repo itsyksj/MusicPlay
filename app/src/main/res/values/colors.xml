@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="background">#FFFFFFFF</color>
+    <color name="basic_text_color">#121212</color>
 
     <!-- Bottom Navigation -->
     <color name="bottom_nav_select">#121212</color>
